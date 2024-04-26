@@ -35,13 +35,9 @@ void test_module_under_test_NeedToImplement(void)
 
 void test_module_under_test_call_bar(void){
 
-    bar_CMockExpectAndReturn(21, 1);
 
-    UnityAssertEqualNumber((UNITY_INT)((foo())), (UNITY_INT)((1)), (
 
-   ((void *)0)
 
-   ), (UNITY_UINT)(22), UNITY_DISPLAY_STYLE_INT);
 
 
 
@@ -49,12 +45,8 @@ void test_module_under_test_call_bar(void){
 
 void test_module_under_test_not_call_bar(void){
 
-    bar_CMockExpectAndReturn(26, 0);
 
-    UnityAssertEqualNumber((UNITY_INT)((foo())), (UNITY_INT)((0)), (
 
-   ((void *)0)
 
-   ), (UNITY_UINT)(27), UNITY_DISPLAY_STYLE_INT);
 
 }

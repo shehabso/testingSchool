@@ -50,7 +50,6 @@
   :test_preprocess:
     - *common_defines
     - TEST
-
 :cmock:
   :mock_prefix: mock_
   :when_no_prototypes: :warn
@@ -98,4 +97,11 @@
   :enabled:
     - stdout_pretty_tests_report
     - module_generator
+    - gcov
+:commands:
+  :generate_coverage_report:
+    :cmd: "gcovr -r . --html --html-details -o coverage_report.html"
+
+
+
 ...
