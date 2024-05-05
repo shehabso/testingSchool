@@ -98,6 +98,12 @@
     - stdout_pretty_tests_report
     - module_generator
     - gcov
-:commands:
-  :generate_coverage_report:
-    :cmd: "gcovr -r . --html --html-details -o coverage_report.html"
+:plugins:
+  :enabled:
+    - command_hooks
+:tools:
+  :post_test:
+    :executable: python 
+    :arguments:
+      - my_script.py
+      - ${1} # Replaced with the filepath to the linker's binary artifact output
