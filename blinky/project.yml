@@ -106,4 +106,4 @@
     :executable: python 
     :arguments:
       - my_script.py
-      - ${1} # Replaced with the filepath to the linker's binary artifact output
+      - ${1} # Replaced with the filepath to the linker's binary artifact output 
