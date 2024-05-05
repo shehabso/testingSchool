@@ -84,7 +84,7 @@ int main(void)
   UnityBegin("test_module_under_test.c");
   run_test(test_module_under_test_NeedToImplement, "test_module_under_test_NeedToImplement", 15);
   run_test(test_module_under_test_call_bar, "test_module_under_test_call_bar", 20);
-  run_test(test_module_under_test_not_call_bar, "test_module_under_test_not_call_bar", 25);
+  run_test(test_module_under_test_not_call_bar, "test_module_under_test_not_call_bar", 26);
 
   CMock_Guts_MemFreeFinal();
   return UnityEnd();

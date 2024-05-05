@@ -12,7 +12,7 @@
   :message: ''
   :unity_test_time: 0
 - :test: test_module_under_test_not_call_bar
-  :line: 25
+  :line: 26
   :message: ''
   :unity_test_time: 0
 :failures: []
@@ -23,4 +23,4 @@
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.010259200003929436
+:time: 0.010727299959398806

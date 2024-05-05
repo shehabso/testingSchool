@@ -35,9 +35,15 @@ void test_module_under_test_NeedToImplement(void)
 
 void test_module_under_test_call_bar(void){
 
+    bar_CMockExpectAndReturn(21, 1);
 
+    unsigned char res =foo();
 
+    UnityAssertEqualNumber((UNITY_INT)((res)), (UNITY_INT)((1)), (
 
+   ((void *)0)
+
+   ), (UNITY_UINT)(23), UNITY_DISPLAY_STYLE_INT);
 
 
 
