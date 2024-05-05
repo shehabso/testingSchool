@@ -1,22 +1,4 @@
 
-# import os
-# import shutil
-# def run_cppcheck():
-#     #  create folder path 
-#     folder_path = "build/artifacts/cppcheck"
-#     # Create the folder if it doesn't exist
-#     os.makedirs(folder_path, exist_ok=True)
-#     # go to the src folder 
-#     os.chdir('src/')
-#     # run the cppcheck on the current dir 
-#     os.system('cppcheck . --enable=all 2> static_analysis.txt')
-#     # move the output file into ../build/artifacts/cppcheck
-#     shutil.move('static_analysis.txt','../build/artifacts/cppcheck')
-#    # os.remove('src/static_analysis.txt')
-# if __name__ == "__main__":
-#     run_cppcheck()
-
-
 import os
 import shutil
 
