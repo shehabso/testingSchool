@@ -1,6 +1,0 @@
-ledDriver.c:3:0: style: The function 'foo' is never used. [unusedFunction]
-unsigned char foo(void){
-^
-ledDriver.c:10:0: style: The function 'MAIN' is never used. [unusedFunction]
-int MAIN(void){
-^

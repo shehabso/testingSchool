@@ -1,7 +1,0 @@
-
-
-
-
-
-
-unsigned char bar(void);

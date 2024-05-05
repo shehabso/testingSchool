@@ -1,7 +1,0 @@
----
-src/module_A.c:
-- TEST
-build/test/mocks/mock_module_A.c:
-- TEST
-src/module_under_test.c:
-- TEST
