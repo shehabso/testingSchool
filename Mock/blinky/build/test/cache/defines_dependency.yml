@@ -1,9 +1,0 @@
----
-src/ledDriver.c:
-- TEST
-build/test/mocks/mock_module.c:
-- TEST
-build/test/mocks/mock_moduleA.c:
-- TEST
-src/moduleA.c:
-- TEST
