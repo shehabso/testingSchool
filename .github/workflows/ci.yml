@@ -28,6 +28,6 @@ jobs:
 
     - name: Build and run tests with Ceedling 
       run: |
-        cd unit_test/project_test
+        cd unit test/project_test
         ceedling test:all
 
