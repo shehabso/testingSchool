@@ -30,14 +30,13 @@ jobs:
     - name: Build and run tests with Ceedling  for project_1 
       working-directory: unit/test_project
       run: |  
-        ceedling test:all
-        ceedling gcov:all
+        ceedling test:all gcov:all
 
     - name: Build and run tests with Ceedling  for project_2 
       working-directory: Mock/blinky
       run: |  
-        ceedling test:all
-        ceedling gcov:all 
+        ceedling test:all gcov:all
+        
 
 
 
