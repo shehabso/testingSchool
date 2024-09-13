@@ -13,20 +13,22 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: | 
-        sudo apt-get update 
-        sudo apt-get install -y ruby-full
-        ruby --version
-        gem install ceedling --user-install
-        gem --version 
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0'
+    - name: Add Gem Directory to PATH
+      run: echo "${HOME}/.local/share/gem/ruby/3.0.0/bin" >> $GITHUB_PATH
+    - name: Install Dependencies
+      run: bundle install
+
+    - name: Run Ceedling
+      run: ceedling test:all
+
 
 
     # - name: check version
     #   run: |
     #     ceedling --version 
-
-
-
