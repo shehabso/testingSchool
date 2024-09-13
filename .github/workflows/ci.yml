@@ -20,7 +20,7 @@ jobs:
         sudo apt-get update 
         sudo apt-get install -y ruby-full
         ruby --version
-        gem install ceedling 
+        gem install ceedling --user-install
         gem --version 
 
 
