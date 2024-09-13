@@ -19,10 +19,12 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.0'
+
     - name: Add Gem Directory to PATH
       run: echo "${HOME}/.local/share/gem/ruby/3.0.0/bin" >> $GITHUB_PATH
+
     - name: Install Dependencies
-      run: bundle install
+      run: gem install ceedling
 
     - name: Run Ceedling
       run: ceedling test:all
