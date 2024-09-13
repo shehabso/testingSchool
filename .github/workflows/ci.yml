@@ -19,7 +19,9 @@ jobs:
       run: | 
         sudo apt-get update 
         sudo apt-get install -y ruby-full
-        gem install ceedling --user-install
+        ruby --version
+        gem install ceedling 
+        gem --version 
 
 
     - name: check version
