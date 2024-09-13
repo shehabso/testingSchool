@@ -29,6 +29,6 @@ jobs:
 
     - name: Build and run tests with Ceedling 
       working-directory: unit/test_project
-      run: pwd
+      run: ls -al
 
 
