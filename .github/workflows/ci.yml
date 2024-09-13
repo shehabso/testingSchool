@@ -28,7 +28,8 @@ jobs:
 
     - name: Build and run tests with Ceedling 
       run: |
-        unit test/project_test
+        pwd
+        unit/project_test
         pwd
 
        # ceedling test:all
