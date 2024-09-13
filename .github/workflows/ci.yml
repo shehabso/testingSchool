@@ -32,5 +32,6 @@ jobs:
       run: |  
         ls -al
         ceedling test:all
+        ceedling gcov:all
 
 
