@@ -24,9 +24,9 @@ jobs:
         gem --version 
 
 
-    - name: check version
-      run: |
-        ceedling --version 
+    # - name: check version
+    #   run: |
+    #     ceedling --version 
 
 
 
