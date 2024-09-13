@@ -1,4 +1,4 @@
-name: ci_workflows
+name: CI with Ceedling
 
 on:
     push:
@@ -16,12 +16,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install dependencies
-      run: sudo apt-get update && sudo apt-get install -y ruby-full
-    - name: Install Ceedling 
-      run: gem install ceedling
-    - name: checkout ceeding working good 
+      run: | 
+        sudo apt-get update 
+        sudo apt-get install -y ruby-full
+        gem install ceedling --user-install
+
+
+    - name: Build and run tests with Ceedling 
       run: |
-        cd unit test/test_project/
+        cd unit_test/project_test
         ceedling test:all
 
 
