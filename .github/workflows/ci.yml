@@ -27,11 +27,17 @@ jobs:
       run: gem install ceedling
      
 
-    - name: Build and run tests with Ceedling 
+    - name: Build and run tests with Ceedling  for project_1 
       working-directory: unit/test_project
       run: |  
-        ls -al
         ceedling test:all
         ceedling gcov:all
+
+    - name: Build and run tests with Ceedling  for project_2 
+      working-directory: Mock/blinky
+      run: |  
+        ceedling test:all
+        ceedling gcov:all
+
 
 
