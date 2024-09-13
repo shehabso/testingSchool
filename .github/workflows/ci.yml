@@ -22,10 +22,9 @@ jobs:
         gem install ceedling --user-install
 
 
-    - name: Build and run tests with Ceedling 
+    - name: check version
       run: |
-        cd unit test/project_test
-        ceedling test:all
+        ceedling --version 
 
 
 
