@@ -25,12 +25,10 @@ jobs:
 
     - name: Install Dependencies
       run: gem install ceedling
+     
 
     - name: Build and run tests with Ceedling 
-      run: |
-        pwd
-        unit/project_test
-        pwd
+      working-directory: unit/test_project
+      run: ceedling test:all 
 
-       # ceedling test:all
 
