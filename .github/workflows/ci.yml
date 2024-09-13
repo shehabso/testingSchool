@@ -26,11 +26,8 @@ jobs:
     - name: Install Dependencies
       run: gem install ceedling
 
-    - name: Run Ceedling
-      run: ceedling test:all
+    - name: Build and run tests with Ceedling 
+      run: |
+        cd unit_test/project_test
+        ceedling test:all
 
-
-
-    # - name: check version
-    #   run: |
-    #     ceedling --version 
