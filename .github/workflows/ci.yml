@@ -37,7 +37,7 @@ jobs:
       working-directory: Mock/blinky
       run: |  
         ceedling test:all
-        ceedling gcov:all
+        ceedling gcov:all 
 
 
 
