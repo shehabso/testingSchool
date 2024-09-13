@@ -1,6 +1,0 @@
-simple_module.c:2:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
-#include<stdio.h>
-^
-simple_module.c:16:0: style: The function 'operation' is never used. [unusedFunction]
-int operation(unsigned char operation ,int x ,int y ){
-^

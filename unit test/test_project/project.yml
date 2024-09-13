@@ -95,13 +95,10 @@
   :load_paths:
     - "#{Ceedling.load_path}"
   :enabled:
-    - stdout_pretty_tests_report
+    - stdout_pretty_tests_report      #nice test results at your command line
+    # - our_custom_code_metrics_report  #maybe you needed line count and complexity metrics, so you
+    # - xml_tests_report
+    - warnings_report
     - module_generator
     - gcov
     - command_hooks
-:tools:
-  :post_test:
-    :executable: python 
-    :arguments:
-      - my_script.py
-      - ${1} # Replaced with the filepath to the linker's binary artifact output 
