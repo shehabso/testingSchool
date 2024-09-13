@@ -1,0 +1,28 @@
+name: ci_workflows
+
+on:
+    push:
+      branches:
+        - main
+    pull_request:
+      branches:
+        - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y ruby-full
+    - name: Install Ceedling 
+      run: gem install ceedling
+    - name: checkout ceeding working good 
+      run: |
+        cd unit test/test_project/
+        ceedling test:all
+
+
+
