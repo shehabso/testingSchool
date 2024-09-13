@@ -28,6 +28,7 @@ jobs:
 
     - name: Build and run tests with Ceedling 
       run: |
-        cd unit test/project_test
+        git clone https://github.com/shehabso/test_driven_development
+        cd test_driven_development/unit test/project_test
         ceedling test:all
 
