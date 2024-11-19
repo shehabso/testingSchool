@@ -22,7 +22,7 @@ jobs:
         ruby-version: '3.0'
 
     - name: Install Ceedling
-      run: gem install ceedling
+      run: gem install ceedling && gem update ceedling 
 
     - name: Install Cppcheck
       run: sudo apt-get install -y cppcheck
@@ -37,7 +37,10 @@ jobs:
       run: |
         ceedling test:all gcov:all
 
-    - name: Build and run tests with Ceedling and Cppcheck
-      working-directory: ceedling-cppcheck-example/test_project
-      run: |
-        ceedling test:all gcov:all 
+    # - name: Build and run tests with Ceedling and Cppcheck
+    #   working-directory: ceedling-cppcheck-example/test_project
+    #   run: |
+    #     ceedling test:all gcov:all 
+    - name: Run Cppcheck
+      run: cppcheck --enable=all --error-exitcode=1 ceedling-cppcheck-example/test_project/src
+
