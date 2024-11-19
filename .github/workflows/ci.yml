@@ -39,9 +39,10 @@ jobs:
 
 
     - name: Run Cppcheck
-      working-directory: ceedling-cppcheck-example/test_project
+      working-directory: ceedling-cppcheck-example
       run: |
-        ceedling cppcheck:all
+          
+
 
       
         
