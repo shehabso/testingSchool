@@ -36,6 +36,12 @@ jobs:
       working-directory: Mock/blinky
       run: |  
         ceedling test:all gcov:all
+    
+
+    - name: Build and run tests with Ceedling for Cppcheck example 
+      working-directory: ceedling-cppcheck-example
+      run: |
+        ceedling test:all gcov:all cppcheck:all
         
 
 

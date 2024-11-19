@@ -1,7 +1,5 @@
 
-
 #include "unity.h"
-
 #include "simple_module.h"
 
 void setUp(void)
@@ -40,5 +38,10 @@ void test_divsion_operation(void)
 void test_main_operation(void)
 {
     TEST_ASSERT_EQUAL_INT16(11,operation('+',5,6));
+}
+
+void test_main_operation12(void)
+{
+    TEST_ASSERT_EQUAL_INT16(12,operation('+',6,6));
 }
 

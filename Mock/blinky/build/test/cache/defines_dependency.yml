@@ -1,0 +1,7 @@
+---
+build/test/mocks/mock_moduleA.c:
+- TEST
+src/ledDriver.c:
+- TEST
+src/moduleA.c:
+- TEST
