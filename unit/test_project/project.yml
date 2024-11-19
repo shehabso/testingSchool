@@ -96,9 +96,6 @@
     - "#{Ceedling.load_path}"
     - vendor/ceedling/plugins
   :enabled:
-    - cppcheck
-
-  :enabled:
     - stdout_pretty_tests_report      #nice test results at your command line
     # - our_custom_code_metrics_report  #maybe you needed line count and complexity metrics, so you
     # - xml_tests_report
@@ -107,6 +104,18 @@
     - gcov
     - command_hooks
     - module_generator
+    - cppcheck
+
+:cppcheck:
+  :reports:
+    - text
+    - xml
+    - html
+  :standard: c99
+  :inline_suppressions: true
+  :addons:
+    - misra
+
 
 
 
