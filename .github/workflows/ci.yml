@@ -43,4 +43,10 @@ jobs:
     #     ceedling test:all gcov:all 
     - name: Run Cppcheck
       run: cppcheck --enable=all --error-exitcode=1 ceedling-cppcheck-example/test_project/src
+    - name: Run Ceedling 
+      run: |
+        ceedling test:all gcov:all
+
+      
+        
 
