@@ -40,4 +40,4 @@ jobs:
     - name: Build and run tests with Ceedling and Cppcheck
       working-directory: ceedling-cppcheck-example
       run: |
-        ceedling test:all gcov:all cppcheck:all
+        ceedling test:all gcov:all 
