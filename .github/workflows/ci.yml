@@ -35,7 +35,7 @@ jobs:
     - name: Build and run tests with Ceedling for project_2
       working-directory: Mock/blinky
       run: |
-        ceedling test:all gcov:all
+        ceedling test:all gcov:all cppcheck:all
 
 
     # - name: Run Cppcheck with ceedling 
