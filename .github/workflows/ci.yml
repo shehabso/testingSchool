@@ -1,12 +1,13 @@
 name: CI with Ceedling
 
 on:
-    push:
-      branches:
-        - main
-    pull_request:
-      branches:
-        - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,26 +24,23 @@ jobs:
     - name: Add Gem Directory to PATH
       run: echo "${HOME}/.local/share/gem/ruby/3.0.0/bin" >> $GITHUB_PATH
 
-    - name: Install Dependencies
+    - name: Install Ceedling
       run: gem install ceedling
-     
 
-    - name: Build and run tests with Ceedling  for project_1 
+    - name: Install Cppcheck
+      run: sudo apt-get install -y cppcheck
+
+    - name: Build and run tests with Ceedling for project_1
       working-directory: unit/test_project
-      run: |  
+      run: |
         ceedling test:all gcov:all
 
-    - name: Build and run tests with Ceedling  for project_2 
+    - name: Build and run tests with Ceedling for project_2
       working-directory: Mock/blinky
-      run: |  
+      run: |
         ceedling test:all gcov:all
-    
 
-    - name: Build and run tests with Ceedling for Cppcheck example 
+    - name: Build and run tests with Ceedling and Cppcheck
       working-directory: ceedling-cppcheck-example
       run: |
         ceedling test:all gcov:all cppcheck:all
-        
-
-
-
