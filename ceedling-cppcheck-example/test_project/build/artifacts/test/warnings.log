@@ -1,0 +1,13 @@
+In file included from C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/ceedling-0.31.1/vendor/unity/src/unity.h:21:0,
+                 from test/test_simple_module.c:2:
+test/test_simple_module.c: In function 'test_main_operation':
+test/test_simple_module.c:40:32: warning: implicit declaration of function 'operation' [-Wimplicit-function-declaration]
+     TEST_ASSERT_EQUAL_INT16(11,operation('+',5,6));
+                                ^
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/ceedling-0.31.1/vendor/unity/src/unity_internals.h:797:182: note: in definition of macro 'UNITY_TEST_ASSERT_EQUAL_INT16'
+ #define UNITY_TEST_ASSERT_EQUAL_INT16(expected, actual, line, message)                           UnityAssertEqualNumber((UNITY_INT)(UNITY_INT16)(expected), (UNITY_INT)(UNITY_INT16)(actual), (message), (UNITY_LINE_TYPE)(line), UNITY_DISPLAY_STYLE_INT16)
+                                                                                                                                                                                      ^~~~~~
+test/test_simple_module.c:40:5: note: in expansion of macro 'TEST_ASSERT_EQUAL_INT16'
+     TEST_ASSERT_EQUAL_INT16(11,operation('+',5,6));
+     ^~~~~~~~~~~~~~~~~~~~~~~
+

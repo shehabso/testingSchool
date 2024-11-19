@@ -38,6 +38,6 @@ jobs:
         ceedling test:all gcov:all
 
     - name: Build and run tests with Ceedling and Cppcheck
-      working-directory: ceedling-cppcheck-example
+      working-directory: ceedling-cppcheck-example/test_project
       run: |
         ceedling test:all gcov:all 
