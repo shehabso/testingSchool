@@ -38,10 +38,10 @@ jobs:
         ceedling test:all gcov:all
 
 
-    - name: Run Cppcheck
-      working-directory: ceedling-cppcheck-example
-      run: |
-          
+    # - name: Run Cppcheck with ceedling 
+
+
+
 
 
       
