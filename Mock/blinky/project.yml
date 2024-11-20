@@ -96,11 +96,12 @@
     - "../../.."
 
   :enabled:
+    - cppcheck
     - stdout_pretty_tests_report
     - module_generator
     - gcov
     - command_hooks
-  #  - cppcheck
+    
 
 :tools:
   :post_test:
