@@ -1,4 +1,4 @@
----
+2---
 
 # Notes:
 # Sample project C code is not presently written to produce a release artifact.
@@ -94,13 +94,15 @@
 :plugins:
   :load_paths:
     - "#{Ceedling.load_path}"
-    -../../vendor/ceedling/plugins
+    -../../../vendor/ceedling/plugins
 
   :enabled:
     - stdout_pretty_tests_report
     - module_generator
     - gcov
     - command_hooks
+    - cppcheck
+
 :tools:
   :post_test:
     :executable: python 
