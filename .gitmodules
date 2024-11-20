@@ -1,0 +1,4 @@
+[submodule "Mock/blinky/vendor/ceedling/plugins/cppcheck"]
+	path = Mock/blinky/vendor/ceedling/plugins/cppcheck
+	url = https://github.com/deltalejo/ceedling-cppcheck-plugin.git
+	branch = ceedling-0.31
