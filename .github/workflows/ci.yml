@@ -29,6 +29,8 @@ jobs:
        
           gem install ceedling --pre
 
+          ceedling version 
+
 
     - name: Install Cppcheck
       run: sudo apt-get install -y cppcheck
