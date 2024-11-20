@@ -26,7 +26,7 @@ jobs:
     - name: Install Ceedling
       run: |
           gem install bundler -v 1.16.2
-          gem install ceedling && gem update ceedling 
+          gem install ceedling -v 1.0.0-f899db8
           
 
     - name: Install Cppcheck
