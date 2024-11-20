@@ -101,7 +101,7 @@
     - module_generator
     - gcov
     - command_hooks
-  #  - cppcheck
+    - cppcheck
 
 :tools:
   :post_test:
@@ -109,3 +109,13 @@
     :arguments:
       - my_script.py
       - ${1} # Replaced with the filepath to the linker's binary artifact output 
+
+:cppcheck:
+  :reports:
+    - text
+    - xml
+    - html
+  :standard: c99
+  :inline_suppressions: true
+  :addons:
+    - misra
