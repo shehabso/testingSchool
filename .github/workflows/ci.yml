@@ -20,9 +20,14 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.0'
+      # Build & Install Gem
+
 
     - name: Install Ceedling
-      run: gem install ceedling && gem update ceedling 
+      run: |
+          gem install bundler -v 1.16.2
+          gem install ceedling && gem update ceedling 
+          
 
     - name: Install Cppcheck
       run: sudo apt-get install -y cppcheck
