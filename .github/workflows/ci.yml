@@ -44,11 +44,7 @@ jobs:
       run: |
         ceedling test:all gcov:all 
 
-    # - name: Run Cppcheck with ceedling 
-    #   working-directory: Mock/blinky
-    #   run: |
-    #     ceedling cppcheck:all
-
+    
 
 
 
