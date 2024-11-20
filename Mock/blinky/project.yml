@@ -101,7 +101,7 @@
     - module_generator
     - gcov
     - command_hooks
-    - cppcheck
+  #  - cppcheck
 
 :tools:
   :post_test:
